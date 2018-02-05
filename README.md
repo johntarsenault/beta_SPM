@@ -1,13 +1,12 @@
 #beta_SPM
-generates an image of the mean and sem beta values per condition 
-and per ROI
+generates an bar graph of the mean and sem beta values per condition with a figure for each ROI
 ![](./README_PNG/roi_test3_betaBar.png) 
 ##file locations
 location of spm batch file
 
-	spmDir = '/data/fmri_monkey_03/PROJECT/codeshare/example/fmri_spm/spm_12/facebody_glm/';
-	spm_matFile =[spmDir,'/results/SPM.mat'];
-	spm_version = '12';
+	spmDir 	 	= '/data/fmri_monkey_03/PROJECT/codeshare/example/fmri_spm/spm_12/facebody_glm/';
+	spm_matFile 	=[spmDir,'/results/SPM.mat'];
+	spm_version 	= '12';
 
 location of nifti ROIs
 ROIs should be a 1-0 mask in same volume space as the beta images
