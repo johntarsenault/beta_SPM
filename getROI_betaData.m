@@ -12,7 +12,7 @@ end
                 currentImage = squeeze(betaData{j}(:,:,:,k));
                 
                 for i = 1:length(roiIndices)
-                    roiBetaData{i}(j,k)   =  mean(currentImage(roiIndices{i}));
+                    roiBetaData{i}(j,k)   =  nanmean(currentImage(roiIndices{i}));
                 end
 
         end
